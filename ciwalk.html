@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIKOM</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .description {
+            padding: 15px;
+        }
+
+        .description h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+
+        .description p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .maps {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .container{
+        
+        width: 80%;
+         margin: 0 auto;
+        }
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .description {
+            padding: 15px;
+        }
+
+        .description h3 {
+            margin: 0 0 10px;
+            font-size: 1.2em;
+        }
+
+        .description p {
+            margin: 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        .maps {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+            padding-left: 5%;
+        }
+
+        .maps p{
+            text-align: center;
+            padding-left: 5%;
+            color: white;
+        }
+        
+        .container{
+        
+        width: 80%;
+         margin: 0 auto;
+        }
+        /* Tambahan gaya untuk elemen-elemen agar lebih menarik */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url(rb_2149035084.png)
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header span {
+            color:#0056b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background:#0056b3;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background:#007bff;
+            border-radius: 5px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('hero-background.jpg') center/cover no-repeat;
+            color: #0056b3;
+        }
+
+        .hero h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 40px auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-container img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .content h3 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h4 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #2196f3;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .card .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background:#0056b3;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .card .button:hover {
+            background: #2196f3;
+        }
+
+        footer {
+            background:#0056b3;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+       
+        .text {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .text h1 {
+            font-size: 2.5em;
+            color: #0056b3;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .text p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .text span {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Animation keyframes */
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+            margin: 40px auto;
+        }
+
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-container img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin: 40px 0 20px;
+            color: #0056b3;
+        }
+
+        .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animasi saat berpindah slide */
+    width: 100%; /* Pastikan semua slide berada dalam satu baris */
+}
+.carousel-container img {
+    min-width: 100%; /* Pastikan tiap gambar mengisi penuh viewport carousel */
+    object-fit: cover;
+}
+
+.text2{
+    color: #0056b3;
+    padding-left: 10%
+}
+
+.text2 span{
+   color: #007bff;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CIHAMPELAS WALK<span> ciwalk</span></h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+       
+        <a href="kontak.html">kontak</a>
+    </nav>
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="cihampelas-walk-profile1695295751.jpeg" alt="Image 1">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.44_e34d7a6d.jpg" alt="Image 2">
+            <img src="Gambar WhatsApp 2025-01-16 pukul 11.32.58_53de7831.jpg" alt="Image 3">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.45_8593af12.jpg" alt="Image 3">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.46_cc96d705.jpg" alt="Image 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+    
+      
+    </div>
+    <h1 style="text-align: center; padding: 20px 0; color:#007bff;">ACTIVITY<span><br>ciwalk</span></h1>
+ 
+    <div class="gallery">
+       
+        <div class="gallery-item">
+            <img src="cihampelas-walk-profile1695295751.jpeg" alt="Image 1">
+            <div class="description">
+                <h3>first ACTIVITY</h3>
+                <p>At Cihampelas Walk, the students were free to buy anything. My friends and I went to Cihampelas Mall, my friends and I just looked around 😹 because of limited money, the prices were pretty good.</p>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.44_e34d7a6d.jpg" alt="Image 1">
+            <div class="description">
+                <h3>last ACTIVITY in bandung</h3>
+                <p>The last activity in Bandung, the 10th grade students and the teachers, had dinner at a place that had been prepared, after eating we prayed, went to the bus and then went home.</p>
+            </div>
+        </div>
+       
+    <div class="text">
+        <p>
+            <h1>
+            FAQ
+            </h1>
+        </p>
+    <p>
+        <span> Cihampelas Walk (Ciwalk)</span> adalah salah satu pusat perbelanjaan mewah di Kecamatan Coblong, Kota Bandung, Jawa Barat.<br> <span>cihampelas kapan dibangun?</span> <br>
+        Dibangun pada tahun 2017 dengan nilai proyek dengan nilai lelang proyek tahap 1 sebesar Rp48 miliar, Teras Cihampelas kini menghadapi kondisi yang memprihatinkan.
+       <br><span> Cihampelas terkenal dengan apa?</span><br>
+         Di era tahun 90-an sampai 2000-an, Jalan Cihampelas Kota Bandung pamornya begitu tenar. Kalangan anak muda atau keluarga, dari warga lokal maupun wisatawan luar kota, pasti datang ke Jalan Cihampelas untuk berburu aneka fashion seperti jeans, baju, hingga souvenir Kota Bandung.
+    </p>
+</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9637603933993!2d107.6017537742595!3d-6.894938267471419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e65b78ae5a65%3A0x284b500a24d66899!2sCihampelas%20Walk!5e0!3m2!1sid!2sid!4v1737393329234!5m2!1sid!2sid" width="1000" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="text2">
+    <p>
+        <h3>
+       
+              <span> 📍CIHAMPELAS WALK (ciwalk)</span><br><br>
+           Jl. Cihampelas No.160, Cipaganti,<br><br> Kecamatan Coblong, Kota Bandung,<br><br> Jawa Barat 40131
+          
+            <br>
+          <br>
+          <br> 
+       
+    </h3>
+    </p>
+</div>
+</div>
+<footer>
+    <p>&copy; 2025 Kunjungan Industri. Semua Hak Dilindungi.</p>
+    <p>
+        <a href="#">Kebijakan Privasi</a> | <a href="#">Kontak</a>
+    </p>
+</footer>
+
+<script>
+    const carouselContainer = document.querySelector('.carousel-container');
+    const slides = document.querySelectorAll('.carousel-container img');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        // Pastikan index tetap dalam batas jumlah slide
+        if (index < 0) {
+            currentIndex = slides.length - 1; // Kembali ke slide terakhir
+        } else if (index >= slides.length) {
+            currentIndex = 0; // Kembali ke slide pertama
+        } else {
+            currentIndex = index;
+        }
+
+        // Geser container ke slide yang sesuai
+        const offset = -currentIndex * 100; // Menggeser berdasarkan persentase
+        carouselContainer.style.transform = `translateX(${offset}%)`;
+    }
+
+    // Event Listener untuk tombol navigasi
+    prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+    nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+</script>
+<script>
+    let startX = 0;
+    let endX = 0;
+
+    carouselContainer.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    carouselContainer.addEventListener('touchend', (e) => {
+        endX = e.changedTouches[0].clientX;
+        if (startX > endX + 50) {
+            // Geser ke kanan (slide berikutnya)
+            showSlide(currentIndex + 1);
+        } else if (startX < endX - 50) {
+            // Geser ke kiri (slide sebelumnya)
+            showSlide(currentIndex - 1);
+        }
+    });
+</script>
+<script>
+    // Tombol "Kembali ke Atas"
+    const backToTopButton = document.createElement('button');
+    backToTopButton.textContent = "⬆";
+    backToTopButton.style.position = "fixed";
+    backToTopButton.style.bottom = "20px";
+    backToTopButton.style.right = "20px";
+    backToTopButton.style.padding = "10px 15px";
+    backToTopButton.style.fontSize = "18px";
+    backToTopButton.style.backgroundColor = "#0056b3";
+    backToTopButton.style.color = "white";
+    backToTopButton.style.border = "none";
+    backToTopButton.style.borderRadius = "50%";
+    backToTopButton.style.cursor = "pointer";
+    backToTopButton.style.display = "none";
+    backToTopButton.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
+    document.body.appendChild(backToTopButton);
+
+    // Tampilkan tombol saat scroll ke bawah
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Klik tombol untuk kembali ke atas
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Animasi scroll pada elemen tertentu
+    const animatedElements = document.querySelectorAll('.hero, .section-title, .card, .gallery img');
+    window.addEventListener('scroll', () => {
+        animatedElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= window.innerHeight - 100) {
+                element.style.opacity = "1";
+                element.style.transform = "translateY(0)";
+                element.style.transition = "all 0.6s ease-in-out";
+            }
+        });
+    });
+
+    // Set properti awal untuk elemen animasi
+    animatedElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(50px)";
+    });
+</script>
+
+</body>
+</html>

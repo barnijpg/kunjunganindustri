@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunjungan Industri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: whitesmoke;
+          background-image: url(backgraound.jpg);
+        }
+
+        header {
+           background-color: #007bff;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            
+        }
+
+        header span {
+            color: #0056b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content:center;
+          
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s; 
+           font-family: arial,sans-serif;
+            
+        }
+
+        nav a:hover {
+            background: #007bff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          background-image: url(11773484_4845957.jpg);
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 200%;
+            
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.8;
+           color: #0056b3;
+        }
+
+        .carousel-container {
+          display: flex;
+          transition: transform 0.5s ease-in-out; /* Animasi saat berpindah slide */
+          width: 100%; /* Pastikan semua slide berada dalam satu baris */
+        }
+        .carousel-container img {
+         min-width: 100%; /* Pastikan tiap gambar mengisi penuh viewport carousel */
+         object-fit: cover;
+       }
+
+       section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0056b3;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            animation: zoomIn 0.5s forwards;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Animasi Zoom */
+        @keyframes zoomIn {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.2);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery img {
+                height: 120px;
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h4 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #0056b3;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 10px 0 20px;
+        }
+
+        .card .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background: #0056b3;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .card .button:hover {
+            background: #007bff;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      
+        <h1>laporan<span> kunjungan Industri</span></h1>
+   
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="kontak.html">kontak</a>
+    </nav>
+
+    <div class="hero">
+        <h2><span>LAPORAN HASIL KUNJUNGAN INDUSTRI</span></h2>
+        <p>
+            Kunjungan industri adalah kegiatan edukatif yang membawa siswa atau mahasiswa ke perusahaan atau pabrik untuk memahami proses kerja, teknologi, dan budaya profesional secara langsung.
+            <br>
+            <br>
+            Melalui kunjungan ini, peserta dapat:
+            <br>
+            Memahami Proses Kerja: Melihat penerapan teori dalam praktik nyata.
+            Meningkatkan Motivasi: Terinspirasi untuk belajar lebih serius.
+            Mengenal Dunia Kerja: Memahami profesi dan kompetensi yang dibutuhkan.
+            Membangun Relasi: Kesempatan menjalin koneksi dengan profesional industri.
+            Kegiatan ini memberi pengalaman langsung dan wawasan luas, mempersiapkan peserta untuk bersaing di dunia kerja yang dinamis.
+        </p>
+    </div>
+    <section>
+        <h2 class="section-title"><span>Galeri<br>Kunjungan industri</span></h2>
+        <div class="gallery">
+            <img src="Gambar WhatsApp 2025-01-16 pukul 11.32.58_53de7831.jpg" alt="Galeri 1">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 12.06.50_3d69f8a0.jpg" alt="Galeri 2">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 12.06.50_2ae48d8c.jpg" alt="Galeri 3">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.56.25_55ae992c.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.56.24_61f683fa.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.46_cc96d705.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.45_8593af12.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.44_e34d7a6d.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.23_3770fb7a.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.23_3d628b85.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.18_1ba51f4c.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-16 pukul 11.32.59_f475240d.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-14 pukul 17.50.33_4a83bd49.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.19_91db00df.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.52_d6fcecd6.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.49_cb50198d.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-18 pukul 11.55.24_05316b27.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-14 pukul 17.50.55_7251b0b3.jpg" alt="Galeri 4">
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title"><span>LIHAT<br>agenda</span></h2>
+        <div class="cards">
+            <div class="card">
+                <h4>PT Chlorine</h4>
+                <p>PT. Chlorine merupakan perusahaan Digital Agency yang berfokus pada Branding, Design, Web Development dan Social Media Management
+
+                    Dengan berbekal semangat, kreatifitas, inovasi, pengalaman serta networking kami siap membantu bisnis Anda mampu bersaing dengan menerapkan Digital Marketing.</p>
+                <a href="PT chlorine.html" class="button">Lihat Agenda</a>
+            </div>
+            <div class="card">
+                <h4>UNIKOM</h4>
+                <p>Universitas Komputer Indonesia adalah sebuah perguruan tinggi swasta terkemuka yang berada di kota Bandung, Jawa Barat,
+                     tepatnya berlokasi di Jl.Dipatiukur No 112-114. Rektornya saat ini dijabat oleh Prof. Dr. Ir. H. Eddy Soeryanto Soegoto, M.T.<br><br></p>
+                <a href="unikom.html" class="button">Lihat Agenda</a>
+            </div>
+            <div class="card">
+                <h4>Ciwalk</h4>
+                <p>Cihampelas Walk (Ciwalk) adalah salah satu pusat perbelanjaan mewah di Kecamatan Coblong, Kota Bandung, Jawa Barat.<br><br><br><br><br></p>
+                <a href="ciwalk.html" class="button">Lihat Agenda</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kunjungan Industri. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="#">Kebijakan Privasi</a> | <a href="#">Kontak</a>
+        </p>
+    </footer>
+
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const slides = document.querySelectorAll('.carousel-container img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+    
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+            // Pastikan index tetap dalam batas jumlah slide
+            if (index < 0) {
+                currentIndex = slides.length - 1; // Kembali ke slide terakhir
+            } else if (index >= slides.length) {
+                currentIndex = 0; // Kembali ke slide pertama
+            } else {
+                currentIndex = index;
+            }
+    
+            // Geser container ke slide yang sesuai
+            const offset = -currentIndex * 100; // Menggeser berdasarkan persentase
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        }
+    
+        // Event Listener untuk tombol navigasi
+        prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+        nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+    </script>
+    <script>
+        let startX = 0;
+        let endX = 0;
+    
+        carouselContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+    
+        carouselContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) {
+                // Geser ke kanan (slide berikutnya)
+                showSlide(currentIndex + 1);
+            } else if (startX < endX - 50) {
+                // Geser ke kiri (slide sebelumnya)
+                showSlide(currentIndex - 1);
+            }
+        });
+    </script>
+    <script>
+        // Tombol "Kembali ke Atas"
+        const backToTopButton = document.createElement('button');
+        backToTopButton.textContent = "⬆";
+        backToTopButton.style.position = "fixed";
+        backToTopButton.style.bottom = "20px";
+        backToTopButton.style.right = "20px";
+        backToTopButton.style.padding = "10px 15px";
+        backToTopButton.style.fontSize = "18px";
+        backToTopButton.style.backgroundColor = "#0056b3";
+        backToTopButton.style.color = "white";
+        backToTopButton.style.border = "none";
+        backToTopButton.style.borderRadius = "50%";
+        backToTopButton.style.cursor = "pointer";
+        backToTopButton.style.display = "none";
+        backToTopButton.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
+        document.body.appendChild(backToTopButton);
+    
+        // Tampilkan tombol saat scroll ke bawah
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
+    
+        // Klik tombol untuk kembali ke atas
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    
+        // Animasi scroll pada elemen tertentu
+        const animatedElements = document.querySelectorAll('.hero, .section-title, .card, .gallery img');
+        window.addEventListener('scroll', () => {
+            animatedElements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                if (rect.top <= window.innerHeight - 100) {
+                    element.style.opacity = "1";
+                    element.style.transform = "translateY(0)";
+                    element.style.transition = "all 0.6s ease-in-out";
+                }
+            });
+        });
+    
+        // Set properti awal untuk elemen animasi
+        animatedElements.forEach(element => {
+            element.style.opacity = "0";
+            element.style.transform = "translateY(50px)";
+        });
+    </script>
+    
+</body>
+</html>

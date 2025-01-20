@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunjungan Industri</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: whitesmoke;
+          background-image: url(Gambar\ WhatsApp\ 2025-01-12\ pukul\ 08.34.48_376b706e.jpg);
+        }
+
+        header {
+            background-image: url(realistic-design-technology-background_23-2148426705.avif);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header span {
+            color: #0056b3;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #0056b3;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #0056b3;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            
+            color:  white;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            text-shadow: 1px 1px 3px #000;
+        }
+
+        .carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Animasi saat berpindah slide */
+    width: 100%; /* Pastikan semua slide berada dalam satu baris */
+}
+.carousel-container img {
+    min-width: 100%; /* Pastikan tiap gambar mengisi penuh viewport carousel */
+    object-fit: cover;
+}
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin: 40px 0 20px;
+            color: white;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h4 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #0056b3;
+        }
+
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 10px 0 20px;
+        }
+
+        .card .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background: #0056b3;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .card .button:hover {
+            background: #007bff;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #0056b3;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agenda<span>kunjungan Industri</span></h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="agenda.html">Agenda</a>
+        <a href="kontak.html">kontak</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Selamat Datang di Program<span> Kunjungan Industri</span></h2>
+        <p>Temukan pengalaman langsung ke dunia kerja dan perluas wawasan Anda tentang berbagai industri.</p>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-container">
+            <img src="Gambar WhatsApp 2025-01-10 pukul 21.46.56_bd9f5c41.jpg" alt="Image 1">
+            <img src="Gambar WhatsApp 2025-01-10 pukul 21.46.56_bd9f5c41.jpg" alt="Image 2">
+            <img src="Gambar WhatsApp 2025-01-10 pukul 21.46.56_bd9f5c41.jpg" alt="Image 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <section>
+        <h2 class="section-title">Galeri<span><br>Kunjungan industri</span></h2>
+        <div class="gallery">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 1">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 2">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 3">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+            <img src="Gambar WhatsApp 2025-01-12 pukul 00.22.57_1f3cac18.jpg" alt="Galeri 4">
+
+
+
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Tentang<span><br>agenda</span></h2>
+        <div class="cards">
+            <div class="card">
+                <h4>PT Chlorine</h4>
+                <p>PT. Chlorine perusahaan yang bergerak di bidang Digital Marketing Agency, bersilaturahmi sekaligus ingin mengajak kerja sama kepada Prodi Desain Grafis UNIKOM sekaligus untuk mengimplementasikan Link and Match Prodi Desain Grafis dengan DUDI (Dunia Usaha Dunia Industri) bagi Mahasiswa Desain Grafis UNIKOM.</p>
+                <a href="PT chlorine.html" class="button">Lihat Agenda</a>
+            </div>
+            <div class="card">
+                <h4>UNIKOM</h4>
+                <p>Universitas Komputer Indonesia adalah sebuah perguruan tinggi swasta terkemuka yang berada di kota Bandung, Jawa Barat,
+                     tepatnya berlokasi di Jl.Dipatiukur No 112-114. Rektornya saat ini dijabat oleh Prof. Dr. Ir. H. Eddy Soeryanto Soegoto, M.T.</p>
+                <a href="unikom.html" class="button">Lihat Agenda</a>
+            </div>
+            <div class="card">
+                <h4>Ciwalk</h4>
+                <p>Cihampelas Walk (Ciwalk) adalah salah satu pusat perbelanjaan mewah di Kecamatan Coblong, Kota Bandung, Jawa Barat.<br><br><br><br></p>
+                <a href="ciwalk.html" class="button">Lihat Agenda</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kunjungan Industri. Semua Hak Dilindungi.</p>
+        <p>
+            <a href="#">Kebijakan Privasi</a> | <a href="#">Kontak</a>
+        </p>
+    </footer>
+
+    <script>
+        const carouselContainer = document.querySelector('.carousel-container');
+        const slides = document.querySelectorAll('.carousel-container img');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+    
+        let currentIndex = 0;
+    
+        function showSlide(index) {
+            // Pastikan index tetap dalam batas jumlah slide
+            if (index < 0) {
+                currentIndex = slides.length - 1; // Kembali ke slide terakhir
+            } else if (index >= slides.length) {
+                currentIndex = 0; // Kembali ke slide pertama
+            } else {
+                currentIndex = index;
+            }
+    
+            // Geser container ke slide yang sesuai
+            const offset = -currentIndex * 100; // Menggeser berdasarkan persentase
+            carouselContainer.style.transform = `translateX(${offset}%)`;
+        }
+    
+        // Event Listener untuk tombol navigasi
+        prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+        nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+    </script>
+    <script>
+        let startX = 0;
+        let endX = 0;
+    
+        carouselContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+    
+        carouselContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            if (startX > endX + 50) {
+                // Geser ke kanan (slide berikutnya)
+                showSlide(currentIndex + 1);
+            } else if (startX < endX - 50) {
+                // Geser ke kiri (slide sebelumnya)
+                showSlide(currentIndex - 1);
+            }
+        });
+    </script>
+
+<script>
+    // Tombol "Kembali ke Atas"
+    const backToTopButton = document.createElement('button');
+    backToTopButton.textContent = "⬆️";
+    backToTopButton.style.position = "fixed";
+    backToTopButton.style.bottom = "20px";
+    backToTopButton.style.right = "20px";
+    backToTopButton.style.padding = "10px 15px";
+    backToTopButton.style.fontSize = "18px";
+    backToTopButton.style.backgroundColor = "#0056b3";
+    backToTopButton.style.color = "white";
+    backToTopButton.style.border = "none";
+    backToTopButton.style.borderRadius = "50%";
+    backToTopButton.style.cursor = "pointer";
+    backToTopButton.style.display = "none";
+    backToTopButton.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
+    document.body.appendChild(backToTopButton);
+
+    // Tampilkan tombol saat scroll ke bawah
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    });
+
+    // Klik tombol untuk kembali ke atas
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // Animasi scroll pada elemen tertentu
+    const animatedElements = document.querySelectorAll('.hero, .section-title, .card, .gallery img');
+    window.addEventListener('scroll', () => {
+        animatedElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top <= window.innerHeight - 100) {
+                element.style.opacity = "1";
+                element.style.transform = "translateY(0)";
+                element.style.transition = "all 0.6s ease-in-out";
+            }
+        });
+    });
+
+    // Set properti awal untuk elemen animasi
+    animatedElements.forEach(element => {
+        element.style.opacity = "0";
+        element.style.transform = "translateY(50px)";
+    });
+</script>
+
+</body>
+</html>
